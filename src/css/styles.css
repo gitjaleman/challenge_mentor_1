@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] { -moz-appearance:textfield; }
+
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: #c5e4e7;
+}
+#root {
+  width: 100%;
+  height: 100vh;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.logo{
+  margin-bottom: 30px;
+}
+.card{
+  background-color: #fff;
+  width: 100%;
+  max-width: 750px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.card .input{
+  width: 100%;
+  padding: 20px;
+}
+
+.card .input .inputbill{
+  width: 100%;
+}
+.card .input .inputselect{
+  width: 100%;
+}
+.card .input .inputpeople{
+  width: 100%;
+}
+
+.input-tittle {
+  padding: 15px 0;
+  width: 100%;
+}
+.input-tittle label {
+  color: #5e7a7d;
+  font-size: 18px;
+  font-weight: 700;
+}
+.input-tittle span{
+  float: right;
+  color: #e74c3c;
+}
+.error{
+  border: 2px solid #e74c3c !important; 
+}
+.input-field{
+  position: relative;
+}
+
+.input-field input{
+  outline: none;
+  background-color: #f4fafa;
+  border: 2px solid #f4fafa;
+  width: 100%;
+  border-radius: 8px;
+  color: #00494d;
+  font-family: 'Space Mono', monospace;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: right;
+  padding: 8px 25px;
+}
+
+.input-field input:focus {
+  outline: none;
+  border: 2px solid #26c0ab;
+}
+
+.input-field img{
+  position: absolute;
+  left: 25px;
+  top: 15px;
+}
+
+.select-buttons{
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      gap: 10px;
+}
+
+.select-buttons .button-item{
+  width: 46%;
+  text-align: center;
+  background-color: #00494d;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 0;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.select-buttons .button-item:hover{
+  background-color: #9fe8df;
+}
+.select-buttons .item-active{
+  background-color: #26c0ab;
+  color: #00494d;
+}
+.select-buttons .input-item{
+  outline: none;
+  background-color: #f4fafa;
+  border: 2px solid #f4fafa;
+  width: 46%;
+  border-radius: 5px;
+  color: #00494d;
+  font-family: 'Space Mono', monospace;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: right;
+  padding: 10px 0;
+  padding-right: 5px;
+}
+.select-buttons .input-item:focus{
+  outline: none;
+  border: 2px solid #26c0ab;
+}
+
+
+.card .output{
+  background-color: #00494d;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+}
+.card .output .output-up{
+  width: 100%;
+}
+
+.card .output .output-up .output-up-line{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0 20px 0;
+}
+
+.card .output .output-up .output-up-line .line-tittle .tittle {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.card .output .output-up .output-up-line .line-tittle .sub {
+  color: #7f9c9f;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.card .output .output-up .output-up-line .value {
+  color: #26c0ab;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.card .output .output-down{
+  width: 100%;
+  padding-top: 30px;
+}
+.card .output .output-down .btn-reset{
+  width: 100%;
+  background-color: #26c0ab;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00494d;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.card .output .output-down .btn-reset:hover{
+  background-color: #9fe8df;
+}
+
+@media screen and (min-width: 1440px) {
+  .card{
+    display: flex;
+    width: 65%;
+    flex-direction: row;
+    align-items: stretch;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 30px rgba(0, 0, 0, 0.05);
+  }
+  .card .input{
+    width: 50%;
+  }
+  .card .output{
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px;
+  }
+  .select-buttons .button-item{
+    width: 30%;
+  }
+  .select-buttons .input-item{
+    width: 30%;
+  }
+
+
+
+}
